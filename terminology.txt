@@ -15,4 +15,5 @@ Linear functions are those whose graph is a straight line. A linear function has
 
 _____________________________________________________________________________________________________________
 
-
+Optimization problem 
+In mathematics and computer science, an optimization problem is the problem of finding the best solution from all feasible solutions
