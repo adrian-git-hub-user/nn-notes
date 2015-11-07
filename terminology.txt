@@ -10,3 +10,5 @@ of a noisy spike train, not a single value determined by a function.
 
 For more information, you can look at the Activation function article in Wikipedia.
 https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network
+
+Linear functions are those whose graph is a straight line. A linear function has the following form. y = f(x) = a + bx.
