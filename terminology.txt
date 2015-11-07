@@ -1,0 +1,12 @@
+Activation activation function
+
+In typical neural network models, each unit ("neuron") adds up its inputs, and then feeds the sum into a function 
+-- the activation function -- to determine the neuron's output.  Usually it is a so-called "sigmoid function", 
+but it doesn't have to be.  The main constraint is that it can't just be linear, because networks with a linear activation 
+function are effectively only one layer deep, regardless of how complicated their architecture is.
+
+The concept of an activation function doesn't really apply to human neurons.  In human neurons, the output consists 
+of a noisy spike train, not a single value determined by a function.
+
+For more information, you can look at the Activation function article in Wikipedia.
+https://www.quora.com/What-is-the-role-of-the-activation-function-in-a-neural-network
