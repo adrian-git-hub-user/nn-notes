@@ -11,8 +11,11 @@ object GroupBy extends App {
   val cats = List("Tiger", "Lion", "Puma", "Leopard", "Jaguar", "Cheetah", "Bobcat")
   val groupedBy = cats.groupBy(cat => cat.contains("C"))
   println(groupedBy)
+  //Map(false -> List(Tiger, Lion, Puma, Leopard, Jaguar, Bobcat), true -> List(Cheetah))
+  
   val groupedByFirstLetter = cats.groupBy(_.charAt(0))
   println(groupedByFirstLetter)
+  //Map(T -> List(Tiger), J -> List(Jaguar), L -> List(Lion, Leopard), B -> List(Bobcat), P -> List(Puma), C -> List(Cheetah))
   
   val raptors = List("Golden Eagle", "Bald Eagle", "Prairie Falcon", "Peregrine Falcon", "Harpy Eagle", "Red Kite")
   val kinds = raptors.groupBy {
@@ -21,7 +24,8 @@ object GroupBy extends App {
     case _                               => "unknown"
   }
   println(kinds)
-
+ //Map(eagle -> List(Golden Eagle, Bald Eagle, Harpy Eagle), falcon -> List(Prairie Falcon, Peregrine Falcon), unknown -> List(Red Kite))
+  
   val words = List("one", "two", "one", "three", "four", "two", "one")
   
     /**
@@ -33,7 +37,9 @@ object GroupBy extends App {
    */
   val counts = words.groupBy(w => w).mapValues(value => value.length)
   println(words.groupBy(w => w))
+  //Map(one -> List(one, one, one), three -> List(three), four -> List(four), two -> List(two, two))
+  
   println(counts)
-
+  //Map(one -> 3, three -> 1, four -> 1, two -> 2)
 }
 
